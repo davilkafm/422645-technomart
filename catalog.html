@@ -7,27 +7,27 @@
   <body>
       
   <header class="main-header">
-    <div class="container">
-        <div class="logo">
-                <img src="img/index-logo.png" width="200" height="50" alt="Техномарт">
-        </div>
+   <div class="container">
+        <div class="up-navigation">
+            <a class="logo" href="#">Техномарт</a>
+            <form action="#" method="get">
+            <input type="text" name="search">
+            </form>    
         
-        <nav class="up-navigation">
-          <ul>
-              <li>
-                <a class="search" href="#">Поиск:</a>
-              </li>
-              <li>
-                <a class="bookmarks" href="#">Закладки: 0</a>
-              </li>
-              <li>
-                <a class="basket" href="#">Корзина: 10</a>
-              </li>
-              <li>
-                <a class="order" href="#">Оформить заказ</a>
-              </li>
-          </ul>
-        </nav>
+            <div class="up-navigation-links">
+              <ul>
+                <li>
+                  <a class="bookmarks" href="#">Закладки: 0</a>
+                </li>
+                <li>
+                  <a class="basket" href="#">Корзина: 0</a>
+                </li>
+                <li>
+                  <a class="order" href="#">Оформить заказ</a>
+                </li>
+              </ul>        
+            </div>
+        </div> 
       </div>
       
         <div class="container">            
@@ -40,14 +40,14 @@
             </p>
         </section>
         
-        <section class="contacts">
-            <p class="phone-number">
+        <div class="contacts">
+            <a class="phone-number" href="#">
             +7 (812) 555-05-55
-            </p>
+            </a>
             <p class="address">
                 г.Санкт-Петербург. ул. Б. Конюшенная, д. 19/8      
             </p> 
-        </section>
+        </div>
             
         <section class="user-block">
             <ul>
@@ -92,9 +92,10 @@
               </ul>    
             </nav>
       </div>
-      </header>   
+      </header>  
+      
       <div class="breadcrumbs">
-        <img class="home-sprite" src="#">
+        <a class="home-link" src="#"></a>
         <a href="#">Каталог</a>
         <a href="#">Инструмент</a>
         <a href="#">Перфораторы</a>
@@ -103,27 +104,25 @@
       
       <div class="filter">
         <ul>
-        <li>
-        Фильтр:    
-        </li>
-        <li>
-        Сортировка:    
-        </li>
+         <li>Фильтр:</li>
+         <li>Сортировка:</li>
         </ul>
           
         <ul>         
-        <li>
-        <a href="#">По цене</a>    
-        </li>            
-        <li>
-        <a href="#">По типу</a>    
-        </li>
-        <li>
-        <a href="#">По функционалу</a>    
-        </li> 
+          <li>
+            <a href="#">По цене</a>
+          </li>            
+          <li>
+            <a href="#">По типу</a>    
+          </li>
+          <li>
+            <a href="#">По функционалу</a>    
+          </li> 
         </ul>
+      </div>  
           
-        <div class="left-column"> 
+      <div class="left-column"> 
+        <form action="#" method="get">
         <h2>Цена:</h2>
         <div class="skroll">                 
           <button type="button" class="skroll_left"></button>
@@ -138,7 +137,7 @@
         
         <h2>Производители:</h2>
           
-          <ul>
+        <ul>
           <li>
           <input type="checkbox" name="BOSCH-checkbox" id="subscribe-field1">
             <label for="subscribe-field1">Bosch</label>    
@@ -161,7 +160,7 @@
           </li>
         </ul>
         <h2>ПИТАНИЕ:</h2>
-          <div class="">
+        <div class="">
             <label>
                 <input type="radio" name="powered-by..." value="АККУМУЛЯТОРНЫЕ">
                 Аккумуляторные
@@ -173,10 +172,10 @@
             </label>
           </div>
           <input type="submit" value="ПОКАЗАТЬ">
-      </div>
-      </div> 
+          </form>    
+        </div> 
     
-     <section class="all-products">
+        <div class="right-column">
             
           <article class="product-card">
             <a href="#"><img src="#"></a>
@@ -357,7 +356,7 @@
               25500 Р.
               </p>
           </article>       
-          </section>
+          </div>
       
           <div class="page">
           <a href="#">1</a>
