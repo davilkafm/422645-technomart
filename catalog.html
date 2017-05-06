@@ -7,21 +7,23 @@
   </head>
   <body>
       
-  <header class="main-header">
-   <div class="container">
-        <div class="up-navigation">
+      <header class="main-header catalog-header">
+    <div class="container">
+       <div class="up-navigation clearfix">
+         <div class="logo-search">    
             <a class="logo" href="#">Техномарт</a>
             <form action="#" method="get">
+            Поиск:
             <input type="text" name="search">
-            </form>    
-        
+            </form> 
+          </div>
             <div class="up-navigation-links">
               <ul>
                 <li>
                   <a class="bookmarks" href="#">Закладки: 0</a>
                 </li>
                 <li>
-                  <a class="basket" href="#">Корзина: 0</a>
+                  <a class="basket" href="#">Корзина: 10</a>
                 </li>
                 <li>
                   <a class="order" href="#">Оформить заказ</a>
@@ -31,9 +33,11 @@
         </div> 
       </div>
       
+        
+  
         <div class="container">            
-        <div class="description">
-        <section class="left-column">
+        <div class="description clearfix">
+        <section class="description-left-column">
             <p>
                 Интернет-магазин <br>
                 строительных материалов <br>
@@ -91,13 +95,17 @@
       </div>
       </header>  
       
+      <main class="container">    
       <div class="breadcrumbs">
         <a class="home-link" src="#"></a>
         <a href="#">Каталог</a>
         <a href="#">Инструмент</a>
         <a href="#">Перфораторы</a>
       </div>
+      
+      <section class="section-name title-catalog">
       <h1>Перфораторы</h1>
+      </section>      
       
       <div class="filter">
         <ul>
@@ -117,8 +125,8 @@
           </li> 
         </ul>
       </div>  
-          
-      <div class="left-column"> 
+    <div class="catalog-columns clearfix">      
+      <div class="catalog-left-column"> 
         <form action="#" method="get">
         <h2>Цена:</h2>
         <div class="skroll">                 
@@ -136,7 +144,7 @@
           
         <ul>
           <li>
-          <input type="checkbox" name="BOSCH-checkbox" id="subscribe-field1">
+          <input type="checkbox" name="BOSCH-checkbox" id="subscribe-field1" checked>
             <label for="subscribe-field1">Bosch</label>    
           </li>
           <li>
@@ -144,7 +152,7 @@
             <label for="subscribe-field2">Интерскол</label>    
           </li>
           <li>
-          <input type="checkbox" name="MAKITA-checkbox" id="subscribe-field3">
+          <input type="checkbox" name="MAKITA-checkbox" id="subscribe-field3" checked>
             <label for="subscribe-field3">Makita</label>    
           </li>
           <li>
@@ -159,7 +167,7 @@
         <h2>ПИТАНИЕ:</h2>
         <div class="">
             <label>
-                <input type="radio" name="powered-by..." value="АККУМУЛЯТОРНЫЕ">
+                <input type="radio" name="powered-by..." value="АККУМУЛЯТОРНЫЕ" checked>
                 Аккумуляторные
             </label>
             <br>
@@ -172,7 +180,7 @@
           </form>    
         </div> 
     
-        <div class="right-column">
+        <div class="catalog-right-column">
             
           <article class="product-card">
             <a href="#"><img src="img/hummer-2.jpg" width="218" height="171"></a>
@@ -352,21 +360,24 @@
               <p class="new price">
               25500 Р.
               </p>
-          </article>       
+          </article> 
+          <div class="catalog-page">
+            <a href="#">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">следующая</a>
+         </div>
+         </div>
           </div>
       
-          <div class="page">
-          <a href="#">1</a>
-          <a href="#">2</a>
-          <a href="#">3</a>
-          <a href="#">следующая</a>
-          </div>
-      
+          <div class="catalog-about-product">
           <h2>Пара слов о перфораторах</h2>
           <p>
             Перфоратор - универсальный строительный инструмент. Предназначен для сверления и долбения отверстий в кирпиче, бетоне и камне. <br>
             Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В <br> ассортиментном ряду есть выбор "трехрежимников": в одном устройстве будут совмещены отбойный молоток и ударная дрель.
           </p>
+          </div>
+    </main> 
       
       <footer class="container">
         <div class="first-footer">      
@@ -413,26 +424,27 @@
       </nav>
               </div>
               
-        <div class="second-footer">
-            <section class="copyright">
+          <div class="second-footer clearfix">
+              <section class="copyright">
+              &copy;   
               2010-2017 Компания "Техномарт"<br>
               Все права защищены.
-            </section>
+              </section>
             
-            <section class="social">
-            <a href="https://vk.com"><img src="img/icon-vk.png" width="20" height="12"></a>
-            <a href="https://facebook.com"><img src="img/icon-facebook.png" width="10" height="18"></a>
-            <a href="https://www.instagram.com"><img src="img/icon-instagramm.png" width="17" height="17"></a>
-            </section>
+              <section class="social">
+                 <a href="https://vk.com"><img src="img/icon-vk.png" width="20" height="12"></a>
+                 <a href="https://facebook.com"><img src="img/icon-facebook.png" width="10" height="18"></a>
+                 <a href="https://www.instagram.com"><img src="img/icon-instagramm.png" width="17" height="17"></a>
+              </section>
             
-            <section class="mail-us">
+              <section class="mail-us">
+                <p>Обратная связь: <br>
                 <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-            </section>
-            <section class="site-builder">
-            <p>Разработано - <br>
+                  </p>
+               <p>Разработано - <br>
                 <a href="https://htmlacademy.ru">htmlacademy.ru</a></p>
-            </section>
-         </div>             
+              </section>
+         </div>                    
     </footer>
       </body>
       </html>
