@@ -1,11 +1,3 @@
-@font-face {
-    font-family: "Cuprum";
-    src:
-        local("Cuprum Regular"),
-        url("web/cuprum.woff") format("woff");
-}
-
-
 body {
   font-size: 13px;
   font-family: "PT Sans";
@@ -13,6 +5,210 @@ body {
   line-height: 24px;
   color: rgb(0, 0, 0);
   }
+
+.clearfix::after {
+  content: "";
+
+  display: block;
+  clear: both;
+  height: 20px;
+  background-color: white;
+  background-image: linear-gradient(-45deg, white 45%, black 50%, white 55%);
+  background-size: 20px;
+}
+
+.container {
+  width: 960px;
+  margin: 0 auto;
+  padding: 0 10px;
+  background-color: #c6f6c7;
+  box-sizing: border-box;    
+}
+
+.main-header {
+    margin-bottom: 59px;
+}
+
+.catalog-header {
+     margin-bottom: 23px;
+    
+}
+
+.up-navigation {
+    width: 940px;
+    margin-bottom: 46px;
+    background-color: 0ff1e6;
+}
+
+.logo-search {
+   float: left;
+   width: 470px;
+   background-color: #f4f1bf;
+}   
+            
+
+.up-navigation-links {
+   float: right;
+   width: 460px;
+   background-color: #f4f1bf;    
+}
+
+
+.description-left-column {
+    width: 300px;
+    float: left;
+    background-color: #f4f1bf; 
+    margin-right: 10px;
+    margin-bottom: 44px;
+}
+
+.contacts {
+    width: 311px;
+    float: left;
+    background-color: #f4f1bf; 
+    margin-right: 20px;
+    margin-bottom: 44px;
+}
+
+.user-block {
+    width: 300px;
+    float: right;
+    background-color: #f4f1bf; 
+    margin-bottom: 44px;
+}
+
+.main-navigation {
+    width: 940px;
+    background-color: #f4f1bf; 
+    
+}
+
+.offers { /* нужен ли этот див? */
+    width: 940px;
+    background-color: #f4f1bf; 
+    margin-bottom: 53px;
+}
+
+
+.section-name   {
+    width: 940px;
+    background-color: #f4f1bf; 
+    margin-bottom: 20px;
+}
+
+.companies-logo {
+    width: 940px;
+    background-color: #f4f1bf; 
+    margin-bottom: 85px;
+}
+
+.services {
+    width: 940px;
+    background-color: #f4f1bf; 
+    margin-bottom: 79px;
+}
+
+.index-about-us {
+    width: 940px;
+    background-color: #3474bc; 
+    margin-bottom: 79px;
+}
+
+.index-info-about-us {
+    float: left;
+    width: 540px;
+    background-color: #f4f1bf; 
+    margin-right: 10px;
+}
+
+.index-contact-us {
+    float: right;
+    width: 390px;
+    background-color: #f4f1bf; 
+      
+}
+
+.footer {
+    margin-top: 86px;
+    
+   
+    
+}
+
+.first-footer {
+    width: 940px;
+    background-color: #f4f1bf;
+}
+
+.second-footer {
+    width: 940px;
+    background-color: #3474bc;     
+}
+
+.copyright {
+    width: 320px;
+    float: left;
+    background-color: #f4f1bf;
+    margin-right: 70px;
+}
+
+
+.social {
+    width: 160px;
+    float: left;
+    background-color: #f4f1bf;
+}
+
+.mail-us {
+    width: 320px;
+    float: right;
+    background-color: #f4f1bf;
+}
+
+
+
+
+/* каталог   */
+
+.breadcrumbs {
+    width: 390px;
+    background-color: #f4f1bf; 
+    margin-bottom: 20px;
+}
+
+
+.filter {
+    width: 940px;
+    background-color: #f4f1bf; 
+    margin-bottom: 20px;    
+}
+
+.catalog-left-column {
+    width: 220px;
+    background-color: #f4f1bf; 
+    float: left;
+    margin-right: 20px;
+}
+
+.catalog-right-column {
+    width: 700px;
+    background-color: #f4f1bf; 
+    float: right;
+}
+
+.catalog-page {
+    width: 700px;
+    background-color: #f4f1bf; 
+}
+
+.catalog-columns {
+    margin-bottom: 60px;
+}
+
+.catalog-about-product {
+    width: 940px;
+    background-color: #f4f1bf;  
+}
 
     
 
@@ -25,13 +221,30 @@ h1 {
   color: rgb(50, 66, 92);
   }
 
-    
+@font-face {
+    font-family: "Cuprum";
+    src:
+        local("Cuprum Regular"),
+        url("web/cuprum.woff") format("woff");
+}
 
-
-.product-car h3 {
+.product-cart h3 {
   font-size: 18px;
   font-family: "PT Sans";
   font-weight: bold;
   line-height: 20px;
   color: rgb(0, 0, 0);
   }
+
+/*.yellow-nav {
+  color: black;
+}
+
+.logo {
+    width:;
+    height:;
+    
+    background-color: red;
+    border-bottom: 3px solid darkred; 
+}
+*/
