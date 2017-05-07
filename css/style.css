@@ -8,13 +8,8 @@ body {
 
 .clearfix::after {
   content: "";
-
-  display: block;
+  display: table;
   clear: both;
-  height: 20px;
-  background-color: white;
-  background-image: linear-gradient(-45deg, white 45%, black 50%, white 55%);
-  background-size: 20px;
 }
 
 .container {
@@ -38,13 +33,19 @@ body {
     width: 940px;
     margin-bottom: 46px;
     background-color: 0ff1e6;
-}
+} 
 
-.logo-search {
+.up-navigation a {
    float: left;
-   width: 470px;
+   width: 220px;
    background-color: #f4f1bf;
-}   
+} 
+
+.up-navigation form {
+   float: left;
+   width: 260px;
+   background-color: #f4f1bf;
+}  
             
 
 .up-navigation-links {
@@ -55,7 +56,7 @@ body {
 
 
 .description-left-column {
-    width: 300px;
+    width: 270px;
     float: left;
     background-color: #f4f1bf; 
     margin-right: 10px;
