@@ -61,7 +61,7 @@ body {
 .logo {
    float: left;
    width: 112px;
-   background-color: #ff5357;
+   background-color: #ee3643;
    font-family: "Cuprum", "Arial", sans-serif;
    line-height: 24px;
    font-size: 24px;
@@ -77,6 +77,14 @@ body {
    position: relative;
 }
 
+.logo:hover {
+    background-color: #ca2c37;
+}
+
+.logo:active {
+    background-color: #ba2732; 
+}
+
 .logo::after {
 	content: "";
 	width: 220px;
@@ -84,8 +92,19 @@ body {
 	position: absolute;
 	top: 40px;
 	right: 0px;
-	background-color: #c23f42;
+	background-color: #b52933;
 }
+
+
+.logo:hover::after {
+    background-color: #9a212a;
+}
+    
+.logo:active::after {
+    background-color: #8e1e26;
+}
+
+
 
 .up-navigation form {
    float: left;
@@ -94,6 +113,18 @@ body {
    font-family: "Cuprum", "Arial", sans-serif;
    font-size: 17px;
    line-height: 18px;
+   
+}
+
+
+.search input {
+    background-color: #33445a;
+    border: none;
+}
+
+.search input:hover { 
+    background-color: #212a3a;
+    border: none;
 }
 
 
@@ -123,7 +154,7 @@ body {
   text-decoration: none;
   padding: 12px 20px;
   color: #ffffff;
-  background-color: #293449;
+  background-color: #33445a;
 }
 
 .up-navigation-links a:hover {
@@ -132,7 +163,7 @@ body {
 
 .up-navigation-links a:active {
   background-color: #161d29;
-  color:
+  opacity: 0.6;
 }
 
 .up-navigation-links .up-navigation-order {
@@ -144,8 +175,8 @@ body {
 }
 
 .up-navigation-links .up-navigation-order:active {
-background-color: #5fbb2d;
-	opacity: 0.5;
+ background-color: #5fbb2d;
+ opacity: 0.5;
 }
 
 .description-left-column {
@@ -173,8 +204,11 @@ background-color: #5fbb2d;
 }
 
 .contacts-phone-number {
-	color: fb463c;
-	border: 5px #ffffff;
+    width: 264px;
+	color: #eb686a;
+	border: 3px solid #ffffff;
+    text-decoration: none;
+    padding: 12px 22px 8px 8px;
 }
 
 
@@ -197,15 +231,25 @@ background-color: #5fbb2d;
    padding: 0;
    list-style: none;
    font-size: 0;
-	}
+}
 
-.user-block li {
-  display: inline-block;
-  vertical-align: top;
-  font-family: "Cuprum", "Arial", sans-serif;
-  font-size: 21px;
-  line-height: 21px;
-	}
+.user-block a {
+   display: inline-block;
+   vertical-align: top;
+   font-family: "Cuprum", "Arial", sans-serif;
+   font-size: 21px;
+   line-height: 21px;
+   color: #000000;
+}
+
+.user-block a:hover {
+   color: #ee3643;  
+}
+
+.user-block a:active {
+   color: #000000;
+   opacity: 0.5; 
+}
 
 .user-block a {
   display: block;
@@ -213,6 +257,15 @@ background-color: #5fbb2d;
   padding: 12px 25px;
   color: #000000;
   background-color: #ffffff;
+}
+
+.user-block a:hover {
+  color: #ee3643;
+}
+
+.user-block a:active {
+  color: #000000;
+  opacity: 0.5;
 }
 
 .main-navigation {
@@ -245,14 +298,57 @@ background-color: #5fbb2d;
   padding-left: 20px;
   padding-right: 20px;
   color: #ffffff;
-  background-color: #3d546e;
+  }
+
+ .main-navigation a:hover {
+    background-color: #293449;
+    
+}
+
+ .main-navigation a:active {
+    background-color: #1d2739;
+    opacity: 0.5;
 }
 
 
 .offers { /* нужен ли этот див? */
 	width: 940px;
-	background-color: #f4f1bf;
 	margin-bottom: 53px;
+    font-size: 24px;
+    font-family: "Cuprum";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    line-height: 1.25;
+    text-align: left;
+}
+
+.index-offer {
+    width: 300px;
+}
+
+
+.materials {
+    background-color: #ffbf47;
+    
+}
+
+.tool {
+    background-color: #3bbce6;
+    
+}
+.technique {
+    background-color: #dc91d8;
+    
+}
+
+.discounts {
+    background-color: #8ed78f;
+    
+}
+
+.shipping {
+    background-color: #ffbf47;
+    
 }
 
 
@@ -281,13 +377,14 @@ background-color: #5fbb2d;
 	font-size: 14px;
 	line-height: 18px;
 	color: #ffffff;
-	background-color: #ff5357;
+	
 	text-transform: uppercase;
 	/* padding-top: 9px;
 	padding-bottom: 11px; */
 	text-align: center;
 	padding: 15px;
 	height: auto;
+    text-decoration: none;
 }
 
 .section-name .btn {
@@ -296,9 +393,60 @@ background-color: #5fbb2d;
 	top: 50%;
 	transform: translateY(-50%);
 	width: 254px;
+    background-color: #ff5357;
 
 }
 
+
+.materials .btn {
+	/*position: absolute;
+	right:50px;
+	top: 50%;
+	transform: translateY(-50%);*/
+	width: 136px;
+    background-color: #e5ac40;
+
+}
+
+.tool .btn {
+	/*position: absolute;
+	right:50px;
+	top: 50%;
+	transform: translateY(-50%);*/
+	width: 136px;
+    background-color: #35a9cc;
+
+}
+
+.technique .btn {
+	/*position: absolute;
+	right:50px;
+	top: 50%;
+	transform: translateY(-50%);*/
+	width: 136px;
+    background-color: #c682c2;
+
+}
+
+.discounts .btn {
+	/*position: absolute;
+	right:50px;
+	top: 50%;
+	transform: translateY(-50%);*/
+	width: 136px;
+    background-color: #ff5357;
+
+}
+
+.shipping .btn {
+	/*position: absolute;
+	right:50px;
+	top: 50%;
+	transform: translateY(-50%);*/
+	width: 136px;
+    background-color: #ff5357;
+
+}
 
 
 .companies-logo {
