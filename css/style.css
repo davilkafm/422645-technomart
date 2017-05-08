@@ -1,9 +1,19 @@
+@font-face {
+    font-family: "Cuprum";
+    src:
+        
+        url("../web/cuprum.woff") 
+        format("woff");
+}
+
+
 body {
   font-size: 13px;
-  font-family: "PT Sans";
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: normal;
   line-height: 24px;
   color: rgb(0, 0, 0);
+  min-width: 960px;
   }
 
 .clearfix::after {
@@ -16,17 +26,24 @@ body {
   width: 960px;
   margin: 0 auto;
   padding: 0 10px;
-  background-color: #c6f6c7;
   box-sizing: border-box;    
 }
 
+
+
+/* Header */
+
 .main-header {
-    margin-bottom: 59px;
+    margin-bottom: 59px; 
 }
 
+.up-navigation-background {
+    width: 100%;
+    background-color: #33445a;
+   }
+
 .catalog-header {
-     margin-bottom: 23px;
-    
+     margin-bottom: 23px;   
 }
 
 .up-navigation {
@@ -35,26 +52,97 @@ body {
     background-color: 0ff1e6;
 } 
 
-.up-navigation a {
+
+.logo {
    float: left;
-   width: 220px;
-   background-color: #f4f1bf;
+   width: 112px;
+   background-color: #ff5357;
+   font-family: "Cuprum";
+   line-height: 24px;
+   font-size: 24px;
+   font-weight: 400;
+   color: white;
+   text-transform: uppercase;
+   text-align: center;
+   text-decoration: none;
+   padding-left: 54px;
+   padding-right: 54px;
+   padding-bottom: 7px;
+   padding-top: 11px;
+   position: relative;
 } 
+
+.logo::after {
+    content: "";
+    width: 220px;
+    height: 5px;
+    position: absolute;
+    top: 40px;
+    right: 0px;
+    background-color: #c23f42;
+}
 
 .up-navigation form {
    float: left;
    width: 260px;
-   background-color: #f4f1bf;
+   color: #ffffff;
+   font-family: "Cuprum";    
+   font-size: 17px;
+    line-height: 18px;   
 }  
             
 
 .up-navigation-links {
    float: right;
    width: 460px;
-   background-color: #f4f1bf;    
 }
 
 
+.up-navigation-links ul{
+   margin: 0;
+   padding: 0;
+   list-style: none;
+   font-size: 0;
+}
+
+.up-navigation-links li {
+  display: inline-block;
+  vertical-align: top;
+  font-family: "Cuprum";    
+  font-size: 17px;
+  line-height: 18px;    
+}
+
+.up-navigation-links a {
+  display: block;
+  text-decoration: none;
+  padding: 12px 20px;
+  color: #ffffff;    
+  background-color: #293449;    
+}
+
+.up-navigation-links a:hover {
+  background-color: #212a3a;    
+}
+
+.up-navigation-links a:active {
+  background-color: #161d29; 
+  color:
+}
+
+.up-navigation-links .up-navigation-order {
+ background-color: #518534;
+}
+
+.up-navigation-links .up-navigation-order:hover {
+ background-color: #63a63e;
+}
+
+.up-navigation-links .up-navigation-order:active {
+background-color: #5fbb2d;
+    opacity: 0.5;
+}
+    
 .description-left-column {
     width: 270px;
     float: left;
@@ -222,12 +310,6 @@ h1 {
   color: rgb(50, 66, 92);
   }
 
-@font-face {
-    font-family: "Cuprum";
-    src:
-        local("Cuprum Regular"),
-        url("web/cuprum.woff") format("woff");
-}
 
 .product-cart h3 {
   font-size: 18px;
