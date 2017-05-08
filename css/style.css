@@ -104,6 +104,52 @@ body {
     background-color: #8e1e26;
 }
 
+.lower-logo {
+   float: left;
+   width: 112px;
+   height: 63px;
+   background-color: #ee3643;
+   font-family: "Cuprum", "Arial", sans-serif;
+   line-height: 36px;
+   font-size: 36px;
+   font-weight: 400;
+   color: white;
+   text-transform: uppercase;
+   text-align: center;
+   text-decoration: none;
+   padding-left: 54px;
+   padding-right: 54px;
+   padding-bottom: 7px;
+   padding-top: 11px;
+   position: relative;
+}
+
+.lower-logo:hover {
+    background-color: #ca2c37;
+}
+
+.lower-logo:active {
+    background-color: #ba2732; 
+}
+
+.lower-logo::after {
+	content: "";
+	width: 220px;
+	height: 5px;
+	position: absolute;
+	top: 40px;
+	right: 0px;
+	background-color: #b52933;
+}
+
+
+.lower-logo:hover::after {
+    background-color: #9a212a;
+}
+    
+.lower-logo:active::after {
+    background-color: #8e1e26;
+}
 
 
 .up-navigation form {
@@ -311,46 +357,104 @@ body {
 }
 
 
-.offers { /* нужен ли этот див? */
-	width: 940px;
+.offers {
+    width: 940px;
 	margin-bottom: 53px;
     font-size: 24px;
     font-family: "Cuprum";
     color: rgb(255, 255, 255);
     font-weight: bold;
     line-height: 1.25;
-    text-align: left;
 }
 
 .index-offer {
+    display: table-cell;
     width: 300px;
+    height: 123px;
 }
+
+.index-offer-table {
+    display: table;
+    
+}
+
+
+.cell {
+    display: table-cell;
+    width: 400px;
+}
+
+.offers-first-row {
+    display: table-row;
+   
+}
+
+.offers-second-row {
+    display: table-row;
+    width: 300px;
+    
+}
+
 
 
 .materials {
     background-color: #ffbf47;
+    display: table-cell;
     
 }
 
 .tool {
     background-color: #3bbce6;
+    display: table-cell;
     
 }
 .technique {
     background-color: #dc91d8;
+    display: table-cell;
     
 }
 
 .discounts {
     background-color: #8ed78f;
+    display: table-cell;
     
 }
 
 .shipping {
     background-color: #ffbf47;
+    display: table-cell;
     
 }
 
+.slider {
+    display: table-cell;
+    position: relative;
+}
+
+.slider-title {
+  font-size: 36px;
+  font-family: "Cuprum";
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 36px;
+  position: absolute;
+    
+  
+}
+
+.slider p {
+  position: absolute; 
+  top: 100px;
+  font-size: 18px;
+  font-family: "PT Sans";
+  color: rgb(255, 255, 255);
+  line-height: 1.333;
+  
+}
+
+    
+}
 
 .section-name   {
 	width: 940px;
@@ -377,7 +481,7 @@ body {
 	font-size: 14px;
 	line-height: 18px;
 	color: #ffffff;
-	
+    border-radius: 5px;
 	text-transform: uppercase;
 	/* padding-top: 9px;
 	padding-bottom: 11px; */
@@ -386,6 +490,8 @@ body {
 	height: auto;
     text-decoration: none;
 }
+
+
 
 .section-name .btn {
 	position: absolute;
@@ -434,7 +540,7 @@ body {
 	top: 50%;
 	transform: translateY(-50%);*/
 	width: 136px;
-    background-color: #ff5357;
+    background-color: #80c180;
 
 }
 
@@ -444,10 +550,16 @@ body {
 	top: 50%;
 	transform: translateY(-50%);*/
 	width: 136px;
-    background-color: #ff5357;
+    background-color: #e5ac40;
 
 }
 
+.btn-open-catalog {
+    width: 200px;
+    position: absolute;
+    top: 300px;
+    background-color: #ff5357;
+}
 
 .companies-logo {
 	width: 940px;
