@@ -1,9 +1,9 @@
 @font-face {
-    font-family: "Cuprum";
-    src:
-        
-        url("../web/cuprum.woff") 
-        format("woff");
+	font-family: "Cuprum";
+	src:
+
+		url("../fonts/cuprum.woff")
+		format("woff");
 }
 
 
@@ -26,7 +26,7 @@ body {
   width: 960px;
   margin: 0 auto;
   padding: 0 10px;
-  box-sizing: border-box;    
+  box-sizing: border-box;
 }
 
 
@@ -34,30 +34,35 @@ body {
 /* Header */
 
 .main-header {
-    margin-bottom: 59px; 
-}
+	margin-bottom: 59px;
+	background-color: #f3f7f9;
+	width: 100%;
+	max-height: 280px;
+	margin-bottom: 44px;
+	}
 
 .up-navigation-background {
-    width: 100%;
-    background-color: #33445a;
+	width: 100%;
+	background-color: #33445a;
    }
 
+
 .catalog-header {
-     margin-bottom: 23px;   
+	 margin-bottom: 23px;
 }
 
 .up-navigation {
-    width: 940px;
-    margin-bottom: 46px;
-    background-color: 0ff1e6;
-} 
+	width: 940px;
+	margin-bottom: 46px;
+	background-color: 0ff1e6;
+}
 
 
 .logo {
    float: left;
    width: 112px;
    background-color: #ff5357;
-   font-family: "Cuprum";
+   font-family: "Cuprum", "Arial", sans-serif;
    line-height: 24px;
    font-size: 24px;
    font-weight: 400;
@@ -70,27 +75,27 @@ body {
    padding-bottom: 7px;
    padding-top: 11px;
    position: relative;
-} 
+}
 
 .logo::after {
-    content: "";
-    width: 220px;
-    height: 5px;
-    position: absolute;
-    top: 40px;
-    right: 0px;
-    background-color: #c23f42;
+	content: "";
+	width: 220px;
+	height: 5px;
+	position: absolute;
+	top: 40px;
+	right: 0px;
+	background-color: #c23f42;
 }
 
 .up-navigation form {
    float: left;
    width: 260px;
    color: #ffffff;
-   font-family: "Cuprum";    
+   font-family: "Cuprum", "Arial", sans-serif;
    font-size: 17px;
-    line-height: 18px;   
-}  
-            
+   line-height: 18px;
+}
+
 
 .up-navigation-links {
    float: right;
@@ -108,25 +113,25 @@ body {
 .up-navigation-links li {
   display: inline-block;
   vertical-align: top;
-  font-family: "Cuprum";    
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 17px;
-  line-height: 18px;    
+  line-height: 18px;
 }
 
 .up-navigation-links a {
   display: block;
   text-decoration: none;
   padding: 12px 20px;
-  color: #ffffff;    
-  background-color: #293449;    
+  color: #ffffff;
+  background-color: #293449;
 }
 
 .up-navigation-links a:hover {
-  background-color: #212a3a;    
+  background-color: #212a3a;
 }
 
 .up-navigation-links a:active {
-  background-color: #161d29; 
+  background-color: #161d29;
   color:
 }
 
@@ -140,118 +145,229 @@ body {
 
 .up-navigation-links .up-navigation-order:active {
 background-color: #5fbb2d;
-    opacity: 0.5;
+	opacity: 0.5;
 }
-    
+
 .description-left-column {
-    width: 270px;
-    float: left;
-    background-color: #f4f1bf; 
-    margin-right: 10px;
-    margin-bottom: 44px;
+	width: 270px;
+	float: left;
+	padding-left: 52px;
+	margin-right: 10px;
+	font-family: "Cuprum", "Arial", sans-serif;
+	font-size: 16px;
+	line-height: 23px;
+	font-style: italic;
+	color: #ff5357;
 }
 
 .contacts {
-    width: 311px;
-    float: left;
-    background-color: #f4f1bf; 
-    margin-right: 20px;
-    margin-bottom: 44px;
+	width: 270px;
+	float: left;
+	padding-left: 10px;
+	margin-right: 20px;
+	font-family: "Cuprum", "Arial", sans-serif;
+	font-size: 21px;
+	line-height: 21px;
+	text-align: center;
+	text-decoration: none;
+}
+
+.contacts-phone-number {
+	color: fb463c;
+	border: 5px #ffffff;
+}
+
+
+.contacts-address {
+	font-family: "Cuprum", "Arial", sans-serif;
+	font-size: 14px;
+	line-height: 24px;
+	color: #3d546e;
+	text-align: center;
+	font-weight: normal;
 }
 
 .user-block {
-    width: 300px;
-    float: right;
-    background-color: #f4f1bf; 
-    margin-bottom: 44px;
+	width: 300px;
+	float: right;
+	}
+
+.user-block ul {
+   margin: 0;
+   padding: 0;
+   list-style: none;
+   font-size: 0;
+	}
+
+.user-block li {
+  display: inline-block;
+  vertical-align: top;
+  font-family: "Cuprum", "Arial", sans-serif;
+  font-size: 21px;
+  line-height: 21px;
+	}
+
+.user-block a {
+  display: block;
+  text-decoration: none;
+  padding: 12px 25px;
+  color: #000000;
+  background-color: #ffffff;
 }
 
 .main-navigation {
-    width: 940px;
-    background-color: #f4f1bf; 
-    
+	width: 940px;
 }
 
+.main-navigation ul {
+   margin: 0;
+   padding: 0;
+   list-style: none;
+   font-size: 0;
+   background-color: #3d546e;
+   text-align: center;
+	}
+
+.main-navigation li {
+  display: inline-block;
+  vertical-align: top;
+  font-family: "Cuprum", "Arial", sans-serif;
+  font-size: 17px;
+  line-height: 17px;
+
+	}
+
+.main-navigation a {
+  display: block;
+  text-decoration: none;
+  padding-top: 20px;
+  padding-bottom: 18px;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: #ffffff;
+  background-color: #3d546e;
+}
+
+
 .offers { /* нужен ли этот див? */
-    width: 940px;
-    background-color: #f4f1bf; 
-    margin-bottom: 53px;
+	width: 940px;
+	background-color: #f4f1bf;
+	margin-bottom: 53px;
 }
 
 
 .section-name   {
-    width: 940px;
-    background-color: #f4f1bf; 
-    margin-bottom: 20px;
+	width: 940px;
+	background-color: #f9f5f0;
+	margin-bottom: 20px;
+	font-family: "Cuprum", "Arial", sans-serif;
+	color: #3d546e;
+	position: relative;
 }
 
+.section-name h2 {
+	display: inline-block;
+	vertical-align: top;
+	font-family: "Cuprum", "Arial", sans-serif;
+	font-size: 30px;
+	line-height: 30px;
+
+}
+
+.btn {
+	display: block;
+	vertical-align: middle;
+	font-family: "Cuprum", "Arial", sans-serif;
+	font-size: 14px;
+	line-height: 18px;
+	color: #ffffff;
+	background-color: #ff5357;
+	text-transform: uppercase;
+	/* padding-top: 9px;
+	padding-bottom: 11px; */
+	text-align: center;
+	padding: 15px;
+	height: auto;
+}
+
+.section-name .btn {
+	position: absolute;
+	right:50px;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 254px;
+
+}
+
+
+
 .companies-logo {
-    width: 940px;
-    background-color: #f4f1bf; 
-    margin-bottom: 85px;
+	width: 940px;
+	background-color: #f4f1bf;
+	margin-bottom: 85px;
 }
 
 .services {
-    width: 940px;
-    background-color: #f4f1bf; 
-    margin-bottom: 79px;
+	width: 940px;
+	background-color: #f4f1bf;
+	margin-bottom: 79px;
 }
 
 .index-about-us {
-    width: 940px;
-    background-color: #3474bc; 
-    margin-bottom: 79px;
+	width: 940px;
+	background-color: #3474bc;
+	margin-bottom: 79px;
 }
 
 .index-info-about-us {
-    float: left;
-    width: 540px;
-    background-color: #f4f1bf; 
-    margin-right: 10px;
+	float: left;
+	width: 540px;
+	background-color: #f4f1bf;
+	margin-right: 10px;
 }
 
 .index-contact-us {
-    float: right;
-    width: 390px;
-    background-color: #f4f1bf; 
-      
+	float: right;
+	width: 390px;
+	background-color: #f4f1bf;
+
 }
 
 .footer {
-    margin-top: 86px;
-    
-   
-    
+	margin-top: 86px;
+
+
+
 }
 
 .first-footer {
-    width: 940px;
-    background-color: #f4f1bf;
+	width: 940px;
+	background-color: #f4f1bf;
 }
 
 .second-footer {
-    width: 940px;
-    background-color: #3474bc;     
+	width: 940px;
+	background-color: #3474bc;
 }
 
 .copyright {
-    width: 320px;
-    float: left;
-    background-color: #f4f1bf;
-    margin-right: 70px;
+	width: 320px;
+	float: left;
+	background-color: #f4f1bf;
+	margin-right: 70px;
 }
 
 
 .social {
-    width: 160px;
-    float: left;
-    background-color: #f4f1bf;
+	width: 160px;
+	float: left;
+	background-color: #f4f1bf;
 }
 
 .mail-us {
-    width: 320px;
-    float: right;
-    background-color: #f4f1bf;
+	width: 320px;
+	float: right;
+	background-color: #f4f1bf;
 }
 
 
@@ -260,46 +376,46 @@ background-color: #5fbb2d;
 /* каталог   */
 
 .breadcrumbs {
-    width: 390px;
-    background-color: #f4f1bf; 
-    margin-bottom: 20px;
+	width: 390px;
+	background-color: #f4f1bf;
+	margin-bottom: 20px;
 }
 
 
 .filter {
-    width: 940px;
-    background-color: #f4f1bf; 
-    margin-bottom: 20px;    
+	width: 940px;
+	background-color: #f4f1bf;
+	margin-bottom: 20px;
 }
 
 .catalog-left-column {
-    width: 220px;
-    background-color: #f4f1bf; 
-    float: left;
-    margin-right: 20px;
+	width: 220px;
+	background-color: #f4f1bf;
+	float: left;
+	margin-right: 20px;
 }
 
 .catalog-right-column {
-    width: 700px;
-    background-color: #f4f1bf; 
-    float: right;
+	width: 700px;
+	background-color: #f4f1bf;
+	float: right;
 }
 
 .catalog-page {
-    width: 700px;
-    background-color: #f4f1bf; 
+	width: 700px;
+	background-color: #f4f1bf;
 }
 
 .catalog-columns {
-    margin-bottom: 60px;
+	margin-bottom: 60px;
 }
 
 .catalog-about-product {
-    width: 940px;
-    background-color: #f4f1bf;  
+	width: 940px;
+	background-color: #f4f1bf;
 }
 
-    
+
 
 h1 {
   font-size: 30px;
@@ -324,10 +440,10 @@ h1 {
 }
 
 .logo {
-    width:;
-    height:;
-    
-    background-color: red;
-    border-bottom: 3px solid darkred; 
+	width:;
+	height:;
+
+	background-color: red;
+	border-bottom: 3px solid darkred;
 }
 */
