@@ -1,0 +1,212 @@
+
+/* ________________________________ СЕКЦИЯ  ГЛОБАЛЬНЫХ КАСЯКОВ ___________________________ */
+h1,h2,h3 {
+    font-family:Cuprum,Arial,bold,serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/*  Patches!!! Исправить в основном файле */
+
+.description {
+  margin: 0 10px;
+}
+.main-navigation {
+  margin: 45px 10px 60px;
+}
+
+.container {
+  padding: 0 0;
+}
+
+.main-header {
+  padding: 0 0 60px;
+  margin: 0 0 50px;
+}
+
+.section-name .btn {
+  position: inherit;
+}
+
+/* ________________________________ СЕКЦИЯ  ОБЩих ПРАВИЛ  ___________________________ */
+
+/* основной стиль кнопок (красных)  */
+.btn {
+  display: block;
+  color: white;
+  font-family:Cuprum,Arial,bold,serif;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration:none;
+  border-radius: 3px;
+  line-height: 38px;
+  font-size: 14px;
+  background-color: #ee3643;
+  padding: 0px;
+
+}
+
+.btn:hover {
+  background-color: #ca2c37;
+}
+
+.btn:active {
+  background-color: #ba2732;
+}
+
+/* значок "New" на углу плитки */
+.new-item::after {
+  position:absolute;
+  top: 0;
+  right: 0;
+  content:url("../img/new-icon.png");
+
+}
+
+/* ________________________________ СЕКЦИЯ  ПЛИТОЧНОЙ НАВИГАЦИИ  ___________________________ */
+
+.nav-icons-section {
+  //background-color: lightgray;
+  width: 960px;
+  height: 435px;
+  display:block;
+  margin: 50px auto 45px;
+}
+
+/* УСТРАНИТЬ АККУРАТНО - ОСТАЛОСЬ ОТ ТАБЛИЦЫ */
+.nav-row {
+  padding: 0;
+  margin:0;
+  text-decoration:none;
+  list-style:none;
+
+}
+
+/* плитка навигации */
+.nav-section_item {
+  display: block;
+  float: left;
+  box-sizing: border-box;
+  position: relative;
+  width: 300px;
+  height: 125px;
+  margin:10px;
+  padding: 26px 22px 22px;
+  text-align: left;
+  color: white;
+  font-family: "PT Sans";
+ }
+
+/* ++ заголовок плитки навигации (название) - сменить на h3 */
+.nav-section_item h2 {
+  margin: 0;
+  font-size:24px;
+  line-height: 1.25;
+}
+
+/* Цвета отдельных плиток навигации */
+.nav-materials {
+  background-color: #f6b22d;
+}
+
+.nav-instrument {
+  background-color: #4aafde;
+}
+
+.nav-technics {
+  background-color: #cc79d1;
+}
+
+
+.nav-discounts {
+    background-color: #85d179;
+}
+
+.nav-delivery {
+    background-color: #f6b22d;
+}
+
+/* стиль кнопки плитки навигации - затемнее при наведении */
+.nav-section_item:not(.slider) .btn {
+  position:absolute;
+  width: 136px;
+  left: 25px;
+  bottom: 22px;
+  background-color: rgba(0,0,0,0.1);
+
+}
+
+.nav-section_item:not(.slider) .btn:hover {
+  background-color: rgba(0,0,0,0.20);
+
+}
+
+.nav-section_item:not(.slider) .btn:active {
+  background-color: rgba(0,0,0,0.30);
+
+}
+
+/* стиль большой белой иконки плитки навигации - контейнер для расположения справа и центровки */
+.nav-section_item .nav-icon-wrapper {
+  position: absolute;
+  width: 140px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+}
+
+/* а вот и он - больной зуб - иконка плитки навигации */
+.nav-icon-wrapper img {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%,-50%);
+}
+
+
+/* ______________________ СЛАЙДЕР _______________________ */
+/* ++ переперстать под BEM!!! */
+
+.slider h2 {
+  font-size: 36px;
+  line-height: 1.333;
+  text-transform: uppercase;
+}
+
+.nav-section_item.slider {
+  width: 620px;
+  height: 270px;
+  font-size: 18px;
+  line-height: 0.833;
+  background-image: url("../img/slider1.jpg");
+}
+
+.nav-section_item.slider .btn {
+  position:absolute;
+  left: 25px;
+  bottom: 22px;
+  width: 195px;
+
+}
+
+.slider-nav-control {
+  color: white;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.slider-nav-control.left-arrow {
+  left:22px;
+  content: url("../img/icon-left.png");
+}
+
+
+.slider-nav-control.right-arrow {
+  right:22px;
+  content: url("../img/icon-right.png");
+}
+

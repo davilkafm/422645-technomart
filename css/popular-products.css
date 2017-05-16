@@ -1,0 +1,240 @@
+
+/* ________________________________ СЕКЦИЯ  ПОПУЛЯРНЫХ ПРОДУКТОВ ___________________________ */
+
+.popular-products {
+	//background-color: lightgray;
+	margin: 45px auto 20px;
+	padding: 0;
+	width: 960px;
+  	height: auto;
+  	display:block;
+}
+
+/*------------------------ БАШКА (ЗАГОЛОВОК) СЕКЦИИ ПОЛПУЛЯРНЫХ ПРОДУКТОВ --------------------*/
+
+.popular-products__header {
+	position: relative;
+	margin: 10px;
+	padding: 0 22px 0 30px;
+	line-height: 90px;
+	color: #32425c;
+	background-color: #f7f3ec;
+}
+
+.popular-products__header h2 {
+	 text-transform: uppercase;
+	 font-size: 30px;
+	 font-weight: normal;
+	 text-align: left;
+	 margin: 0;
+}
+
+.popular-products__header .btn {
+	position: absolute;
+	top: 50%;
+	right: 24px;
+	transform: translateY(-50%);
+	width: 253px;
+	height: auto;
+
+}
+
+
+/*----------------------------- СПИСОК ПРОДУКТОВ СЕКЦИИ ПОЛПУЛЯРНЫХ ПРОДУКТОВ --------------------*/
+
+.popular-products__items {
+	  padding: 0;
+	  margin:0;
+	  text-decoration:none;
+	  list-style:none;
+}
+
+.popular-products__item {
+	  display: block;
+	  list-style-type: none;
+	  float: left;
+	  box-sizing: border-box;
+	  width: 220px;
+	  height: 318px;
+	  margin: 10px;
+	/*  padding: 26px 22px 22px; */
+	  list-style: none;
+}
+
+/*--------------------------------------- КАРТОЧКА ПОДУКТА -------------------------------------------*/
+
+.product-card {
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 100%;
+	min-height: 318px;
+	min-width: 220px;
+
+  	font-family: "PT Sans";
+	color: black;
+	text-align: center;
+	line-height: 1.111;
+	border: 1px solid #f7f3ec;	
+	overflow: hidden;
+
+}
+/*+++++++++++++++++++++++ секция карточки продукта с фото продукта ++++++++++++++++++++ */
+.product-card__photo {
+	position: relative;	/* для центровки фотографии если она окажется меньше */
+	display: block;		/* по умолчанию показать фото */
+	min-height: 171px;	/*размер не меньше чем сейчас */
+	height: 55%;
+	width: 100%;
+}
+
+/* responsive image style, centered hor and vert */
+.product-card__photo img {
+	position: absolute;		/* для центровки фото */
+	max-width: 100%;		/* если большая то ужать до размера карточки по ширине */
+	height: auto;			/* высоту при этом оставить пропорциональную */
+
+	top: 	50%;							/* центруем по высоте */
+	left: 	50%;							/* и ширине			*/
+	transform: translate(-50%,-50%);	/* исправляем что натворили - доцентрируем :-) */;
+}
+
+.product-card:hover .product-card__photo{
+   display: none;	/* спрятать фото при наведении, но показать форму (далее) */
+
+}
+
+
+/*++++++++++ секция формы с кнопками продукта - показываетися при наведении +++++++++++ */
+.product-card__actions-form {
+	display: none;	/* спрятать форму с кнопками по умолчанию но показать при наведении (далее) */
+	min-height: 171px; /* размер не меньше чем сейчас - иначе поплывут надписи */
+	
+
+}
+
+.product-card:hover .product-card__actions-form {
+	display: table; /* показать форму при наведении, но спрятать фото (ранее). table - для центрирования по вертикали содержимого*/
+	margin: auto;	/* для центрирования по горизонтали формы с кнопками */
+}
+
+.product-card__actions-form form {
+	display: table-cell; /* центрируем по вертикали  */
+	vertical-align: middle;
+}
+
+/*+++++++++++++++  такие зеленые кнопки формы карточки - такие же как красные но зеленые :-) ++++++*/
+.product-card__actions-form .btn {
+	width: 135px;
+	margin: 7px;
+	line-height: 1;
+	height: 38px;
+}
+
+/* кнопка добавления в Каарзину! */
+.btn-add-to-cart {
+	background-color: #63a63e;
+}
+
+.btn-add-to-cart:hover {
+	background-color: #5fbb2d;
+}
+
+.btn-add-to-cart:active {
+	background-color: #518534;
+}
+
+/* кнопка добавления в закладки */
+.btn-add-to-fav {
+	background-color: white;
+	color: #32425c;
+	border: 3px solid #63a63e;
+}
+
+.btn-add-to-fav:hover {
+	background-color: white;
+	color: #32425c;
+	border-color: #32425c;
+
+}
+
+.btn-add-to-fav:active {
+	background-color: white;
+	color: 		#d0d2d6;
+	border-color: #c1c6ce;
+
+}
+
+
+/*+++++++++++++++++ секция информации о продукте - низ карточки продукта ++++++++++++++ */
+.product-card__info {
+	position: absolute;	/*опустить секцию в самый низ - под фото и форму и прилепить её к нижнему краю */
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	height: 140px;		/* забронировать место */
+
+
+}
+
+/*Название продукта, фирма и модель в карточке */
+.product-card__info h3 {
+	font-weight: bold;
+	font-size: 18px;
+	margin:0;
+	padding: 0;
+	text-shadow: 1px 1px #f7f3ec;
+
+}
+
+/* для модели продукта (на следующей строке после  названия) */
+.product-card__info h3 p {
+	margin: 0;
+
+}
+
+/*чтобы название продукта было ссылкой но не мешало */
+.product-card__info h3 a {
+	text-decoration: none;
+	color: black;
+}
+
+/* брэнд продукта - на будущее */
+.product-card__brand {
+
+}
+
+/* модель продукта из названия */
+.product-card__model {
+	text-transform: uppercase;
+	margin: 0;
+}
+
+/* кнока с ценой продукта */
+.product-card__info .btn  {
+	position: absolute;
+	text-transform: uppercase;
+	bottom: 20px;
+	left: 	20%;
+	right: 	20%;
+	font-size: 17px;
+  	font-family: "PT Sans";
+  	font-weight: bold;
+
+}
+
+.product-card_old-price {
+	text-decoration: line-through;
+	text-transform: uppercase;
+	font-size: 17px;
+	font-weight: bold;
+	line-height: 1.059;
+	text-align: center;
+	color: #999999;
+}
+
+.product-card:hover {
+	box-shadow: 0px 10px 25px rgba(0,0,0,.5);
+}
+
+
