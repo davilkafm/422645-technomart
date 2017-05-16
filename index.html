@@ -4,7 +4,9 @@
 	<meta charset="utf-8">
 	<title>Интернет-магазин "Техномарт"</title>
 	<link href="css/style.css" rel="stylesheet">
-  </head>
+      <link href="css/nav-section.css" rel="stylesheet">
+      <link href="css/popular-products.css" rel="stylesheet">
+      </head>
   <body>
 
   <header class="main-header">
@@ -95,136 +97,162 @@
 
 	  </header>
 
-	  <main>
-          <div class="container">
-		<div class="offers">
-		<section class="index-offer materials">
-		   <h3 class="index-offer-title">
-		   Материалы
-		   </h3>
-		   <a class="btn" href="#">
-		   на любой вкус
-		   </a>
-		</section>
+	  <main class="container">       
+       <section class="nav-icons-section">
 
-		<section class="index-offer tool">
-		   <h3 class="index-offer-title">
-		   Инструмент
-		   </h3>
-		   <a class="btn" href="#">
-		   на все случаи
-		   </a>
-		</section>
+			  <ul class="nav-row">
 
-		<section class="index-offer technique">
-		   <h3 class="index-offer-title">
-		   Техника
-		   </h3>
-		   <a class="btn" href="#">
-		   для стройки
-		   </a>
-		</section>
+			    <li class="nav-section_item nav-materials new-item">
+			      <h2>Материалы</h2>
+			      <a class="btn" href="#">На любой вкус</a>
+					<div class="nav-icon-wrapper">
+			      		<img src="img/icon-materials.png" />
+			      	</div>
+			    </li>
 
-		<section class="index-offer discounts">
-		   <h3 class="index-offer-title">
-		   Скидки 50%
-		   </h3>
-		   <a class="btn" href="#">
-		   на 350 товаров
-		   </a>
-		</section>
+			    <li class="nav-section_item nav-instrument">
+			      <h2>Инструмент</h2>
+			      <a class="btn" href="#">На все случаи</a>
+					<div class="nav-icon-wrapper">
+			      		<img src="img/icon-tool.png" />
+			      	</div>			      
+			    </li> 
 
-		<section class="index-offer shipping">
-		   <h3 class="index-offer-title">
-		   Доставка
-		   </h3>
-		   <a class="btn" href="#">
-		   бесплатно
-		   </a>
-		</section>
+			    <li class="nav-section_item nav-technics">
+			      <h2>Техника</h2>
+			      <a class="btn" href="#">Для стройки</a>
+					<div class="nav-icon-wrapper">
+			      		<img src="img/icon-vehicle.png" />
+			      	</div>			      
+			    </li> 
 
-	   <section class="slider">
-	   <h2 class="slider-title">
-		 Перфораторы
-	   </h2>
-		   <img src="img/slider1.jpg" width="620" height="266">
-		 <p>
-		 Настоящие мужские игрушки
-		 </p>
-		   <a class="btn" href="#">открыть каталог</a>
-		</section>
-		  </div>
 
-		<section class="section-name">
-		<h2>
-		Популярные товары:
-		</h2>
-		<a class="btn" href="#">все популярные товары</a>
+			    <li class="nav-section_item slider">
+			      <h2>Перфораторы</h2>
+			      Настоящие мужские игрушки
+			      <a class="btn" href="#">Открыть каталог</a>
+			      <a class="slider-nav-control left-arrow" href="#"></a>
+			      <a class="slider-nav-control right-arrow" href="#"></a>
+
+			    </li> 
+			    
+			    <li class="nav-section_item nav-discounts">
+			      <h2>Скидки 50%</h2>
+			      <a class="btn" href="#">На 350 товаров</a>
+					<div class="nav-icon-wrapper">
+			      		<img src="img/icon-sales.png" />
+			      	</div>			      
+			    </li> 
+
+			    <li class="nav-section_item nav-delivery">
+			      <h2>Доставка</h2>
+			      <a class="btn" href="#">Бесплатно</a>
+					<div class="nav-icon-wrapper">
+			      		<img src="img/icon-shipping.png" />
+			      	</div>			      
+			    </li> 
+
+			 </ul>
 		</section>
+	 
 
 		<section class="popular-products">
 
-		  <article class="product card">
-			<a href="#"><img src="img/hummer-1.jpg" width="218" height="171"></a>
-			<h3>
-			<a href="#">
-			Перфоратор BOSCH BFG 9000
-			</a>
-			</h3>
-			  <p class="old-price">
-			  32500 Р.
-			  </p>
-			  <p class="new-price">
-			  25500 Р.
-			  </p>
-		  </article>
+			<header class="popular-products__header">
+				<h2>Популярные товары:</h2>		
+				<a class="btn" href="#">Все популярные товары</a> 
+			</header>
 
-			<article class="product card">
-			<a href="#"><img src="img/hummer-2.jpg" width="218" height="171"></a>
-			<h3>
-			<a href="#">
-			Перфоратор BOSCH BFG 9000
-			</a>
-			</h3>
-			  <p class="old-price">
-			  32500 Р.
-			  </p>
-			  <p class="new-price">
-			  25500 Р.
-			  </p>
-		  </article>
+			<ul class="popular-products__items clearfix">
+				<li class="popular-products__item">
+						<article class="product-card">
+							<section class="product-card__photo">
+								<a href="#">
+									<img src="img/hummer-1.jpg" >
+								</a>
+							</section>
+							<section class="product-card__actions-form">
 
-			<article class="product card">
-			<a href="#"><img src="img/hummer-3.jpg" width="218" height="171"></a>
-			<h3>
-			<a href="#">
-			Перфоратор BOSCH BFG 9000
-			</a>
-			</h3>
-			  <p class="old-price">
-			  32500 Р.
-			  </p>
-			  <p class="new-price">
-			  25500 Р.
-			  </p>
-		  </article>
+								<form method="post" name="frmItemAction" onsubmit="function(e){e.preventDefault();return;}">
+									<input class="btn btn-add-to-cart" type="submit" value="КУПИТЬ" id="btnAddToCart">
+									<input class="btn btn-add-to-fav" type="submit" value="В ЗАКЛАДКИ" id="btnAddToFav">
+								</form>
+							</section>
+							<section class="product-card__info">
+								<h3>
+									<a href="#">
+                                        Перфоратор <span class="product-card__brand">BOSCH</span>
+										<p class="product-card__model">BFG 9000</p>
+									</a>
+								</h3>
+								<p class="product-card_old-price">
+									32500 Р.
+								</p>
 
-			<article class="product card">
-			<a href="#"><img src="img/hummer-2.jpg" width="218" height="171"></a>
-			<h3>
-			<a href="#">
-			Перфоратор BOSCH BFG 9000
-			</a>
-			</h3>
-			  <p class="old-price">
-			  32500 Р.
-			  </p>
-			  <p class="new-price">
-			  25500 Р.
-			  </p>
-		  </article>
+								<a class="btn product-card__price" href="#">
+									25500 Р.
+								</a>
+							</section>
+						 </article>
+				</li>
+				<li class="popular-products__item">
+						<article class="product-card">
+							<a href="#">
+								<img src="img/hummer-2.jpg" width="218" height="171">
+							</a>
+							<h3>
+								<a href="#">
+                                    Перфоратор <span class="product-card__brand">BOSCH</span>
+									<p class="product-card__model">BFG 3000</p>
+								</a>
+							</h3>
+							<p class="product-card_old-price">
+								22500 Р.
+							</p>
+							<a class="btn product-card__price" href="#">
+								15500 Р.
+							</a>
+						</article>
+				</li>
+				<li class="popular-products__item">
+						<article class="product-card">
+							<a href="#">
+								<img src="img/hummer-3.jpg" width="218" height="171">
+							</a>
+							<h3>
+								<a href="#">
+                                    Перфоратор <span class="product-card__brand">BOSCH</span>
+									<p class="product-card__model">BFG 6000</p>
+								</a>
+							</h3>
+							<p class="product-card_old-price">
+								30500 Р.
+							</p>
+							<a class="btn product-card__price" href="#">
+								25500 Р.
+							</a>
+						</article>
+				</li>
+				<li class="popular-products__item">
+						<article class="product-card new-item">
+							<a href="#">
+								<img src="img/hummer-2.jpg" width="218" height="171">
+							</a>
+							<h3>
+								<a href="#">
+                                    Перфоратор <span class="product-card__brand">BOSCH</span>
+									<p class="product-card__model">BFG 2000</p>
+								</a>
+							</h3>
+
+							<a class="btn product-card__price" href="#">
+								12500 Р.
+							</a>
+						</article>
+				</li>				
+
+			</ul>
 		  </section>
-
           <div class="popular-brands">
 		  <section class="section-name">
 		  <h2>
@@ -246,7 +274,7 @@
 		   <a href="#"><img src="img/metabo.png" width="204" height="69"></a>
 		  </section>
            </div>
- </div>
+
           
           <div class="services">
               <div class="container background-services">
